@@ -1,14 +1,14 @@
 {
   "name": "cloudinary-express",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express NodeJS to upload image to Cloudinary",
   "main": "index.js",
   "scripts": {
     "start": "node .",
     "dev": "nodemon ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Vita Tri Utami",
   "license": "ISC",
   "dependencies": {
     "cloudinary": "^1.35.0",
