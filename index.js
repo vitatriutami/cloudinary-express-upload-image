@@ -22,10 +22,10 @@ const storage = new CloudinaryStorage({
   }
 })
 
-const upload = multer({ storage })
+const upload = multer({ storage }).single
 app.use(cors())
 // POST http://localhost:4001/api/v1/upload
-app.post("/api/v1/upload", upload.single("file"), (req, res) => {
+app.post("/api/v1/upload", upload("file"), (req, res) => {
   res.status(200).json(req.file)
 })
 
